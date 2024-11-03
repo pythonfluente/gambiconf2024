@@ -1,7 +1,7 @@
 # Aprendendo com lis.py
 
 > **DICA:** Clique
-[AQUI](https://colab.research.google.com/github/ramalho/lispyse24/blob/lispy.ipynb)
+[AQUI](https://colab.research.google.com/github/pythonfluente/gambiconf2024/blob/lispy.ipynb)
 para executar o Jupyter Notebook na nuvem através da plataforma Google Colab.
 
 Este repositório contém variações do
@@ -10,6 +10,32 @@ para um subconjunto de
 [Scheme](https://en.wikipedia.org/wiki/Scheme_(programming_language))
 criado por Peter Norvig, descrito em seu texto
 [(How to Write a (Lisp) Interpreter (in Python))](https://norvig.com/lispy.html).
+
+
+## Rodando na linha de comando
+
+O notebook `lispy.ipynb` pode ser exportado como um script Python assim:
+
+```bash
+$ jupyter nbconvert --to script lispy.ipynb
+```
+
+Isso gera o arquivo `lispy.py`, que pode ser executado com `ipython`:
+
+```bash
+$ ipython lispy.py
+```
+ 
+O script exibe o resultado de alguns experimentos, e afinal exibe o REPL (console interativo):
+
+```
+42
+9
+(12 34 10)(0 1 2 3 4 5 6 7 8 9)
+(Este é o lis.py de Norvig)
+lis.py> 
+```
+
 
 ## Proveniência, Direitos Autorais e Licença
 
