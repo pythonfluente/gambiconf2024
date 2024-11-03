@@ -1,9 +1,5 @@
 # Aprendendo com lis.py
 
-> **DICA:** Clique
-[AQUI](https://colab.research.google.com/github/pythonfluente/gambiconf2024/blob/lispy.ipynb)
-para executar o Jupyter Notebook na nuvem através da plataforma Google Colab.
-
 Este repositório contém variações do
 [interpretador lis.py](https://github.com/norvig/pytudes/blob/c33cd6835a506a57d9fe73e3a8317d49babb13e8/py/lis.py)
 para um subconjunto de
@@ -11,6 +7,12 @@ para um subconjunto de
 criado por Peter Norvig, descrito em seu texto
 [(How to Write a (Lisp) Interpreter (in Python))](https://norvig.com/lispy.html).
 
+## Rodando no Colab
+
+Clique no link abaixo para executar o Jupyter Notebook
+na plataforma Google Colab sem instalar nada em sua máquina:
+
+https://colab.research.google.com/github/pythonfluente/gambiconf2024/blob/lispy.ipynb
 
 ## Rodando na linha de comando
 
@@ -20,7 +22,8 @@ O notebook `lispy.ipynb` pode ser exportado como um script Python assim:
 $ jupyter nbconvert --to script lispy.ipynb
 ```
 
-Isso gera o arquivo `lispy.py`, que pode ser executado com `ipython`:
+Isso gera o arquivo `lispy.py`, que  precisa ser executado no console `ipython`
+devido ao uso de alguns comandos mágicos como `%%script`:
 
 ```bash
 $ ipython lispy.py
